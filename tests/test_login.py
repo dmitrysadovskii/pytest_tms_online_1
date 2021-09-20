@@ -21,7 +21,7 @@ def test_login_to_the_system(browser):
 
 
 @allure.feature('Check user can not login to the system with invalid creds')
-def test_login_to_the_system(browser):
+def test_login_with_invalid_data_to_the_system(browser):
     with allure.step('Open main page'):
         main_page = MainPage(browser)
         main_page.open_main_page()
